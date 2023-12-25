@@ -12,6 +12,9 @@ import React, { FormEvent, useRef } from "react";
 function Form() {
   //HTMLInputElement is the indicator that this useRef references an input element
   //required for Type Script; casting
+
+  //first time, there is no DOM element so you MUST init to null
+  //if you leave (), it is undefined and may create problems in future
   const form_nameFldRRef = useRef<HTMLInputElement>(null);
   const form_ageFldRRef = useRef<HTMLInputElement>(null);
   //to get all the form values, create an object and use the key-val pair

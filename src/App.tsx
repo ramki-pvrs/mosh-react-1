@@ -17,6 +17,7 @@ import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ExpandableText from "./components/ExpandableText";
 import Form from "./components/Form";
+import ReactHookForm1 from "./components/ReactHookForm1";
 
 import { useState } from "react";
 
@@ -91,6 +92,7 @@ function App() {
 
   return (
     <div>
+      <ReactHookForm1></ReactHookForm1>
       <Form></Form>
       <ExpandableText maxChars={10}>
         Test Lorem Ipsum is simply dummy text of the printing and typesetting

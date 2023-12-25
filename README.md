@@ -225,3 +225,15 @@ in the component
 
 -- use handleSubmit as separate function
 -- useRef - used to reference DOM element
+
+-- useRef init to null all the time
+-- form values as object
+
+#From lesson - Controlled Components
+--get another way of form input values instead of useRef;
+-- use State Hook useState - Ramki: neither useRef or useState, switch to React Hook Form
+
+-FORM - handle React Hook Form
+
+-Zod is schema based validation - trending lately
+npm install zod
