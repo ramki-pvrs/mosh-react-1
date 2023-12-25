@@ -5,6 +5,7 @@ import App from "./App.tsx";
 //home/ubuntu/Documents/mosh/react/react-app
 //after giving command npm install bootstrap@latest
 import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
 
 //React is for only UI part of the deal
 //ReactDOM is the module for rendering the DOM (vDOM)

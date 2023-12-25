@@ -16,17 +16,28 @@ import NavBar1 from "./components/NavBar1";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
 
 import { useState } from "react";
 
 function App() {
   //return <div><Message></Message></div>;
 
-  let items = ["New York", "Delhi", "Tokyo", "Singapore", "London", "Paris"];
+  let items = [
+    "Test",
+    "New York",
+    "Delhi",
+    "Tokyo",
+    "Singapore",
+    "London",
+    "Paris",
+  ];
   let ListGroupName = "Cities Learn Props";
 
   let colorsList = ["Red", "Blue", "Orange", "Green", "Black", "White"];
   let colorsListName = "Colors List Name: Learn Pass Function via props";
+
+  const x = 10;
 
   const [alertVisible, setAlertVisibility] = useState(false);
 
@@ -80,6 +91,7 @@ function App() {
 
   return (
     <div>
+      <Form></Form>
       <ExpandableText maxChars={10}>
         Test Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

@@ -17,7 +17,7 @@
 //belong to like ListGroupProps - both are same and contextual
 
 import { MouseEvent, useState } from "react";
-import styled from "styled-components";
+import styled from "styled-components"; //Mosh Css-in-JS in Styling Components lesson
 
 import { BsArchiveFill } from "react-icons/bs";
 
@@ -36,6 +36,8 @@ const UnOrderedList = styled.ul`
 interface StyledListItemProps {
   active: boolean;
 }
+
+//
 
 const StyledListItem = styled.li<StyledListItemProps>`
   padding: 5px 0;
@@ -146,7 +148,7 @@ function ListGroupProps({ items_inListGroup, ListGroupName }: ListGroupProps) {
         {/* active is props for List Item to apply coditional styling;  */}
         {items_inListGroup.map((item, index) => (
           <StyledListItem
-            active={index == selectedIndex}
+            active={index === selectedIndex}
             key={item}
             //event is a browser event, in this case it is click event
             //you can print it on debug console and see the object

@@ -222,3 +222,6 @@ in the component
 
   - Reack Hook Forms
   - Zod for data validation
+
+-- use handleSubmit as separate function
+-- useRef - used to reference DOM element
